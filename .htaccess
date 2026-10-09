@@ -1,0 +1,41 @@
+# Fliesen-Licina: statischer Onepager auf webhoster (Apache), Stand 09.10.2026.
+# Ersetzt die WordPress-.htaccess. Das alte WordPress bleibt als Sicherung im Ordner, wird aber nicht mehr ausgeliefert.
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+Options -Indexes
+
+AddType image/webp .webp
+AddType video/mp4 .mp4
+AddType font/woff2 .woff2
+AddType application/manifest+json .webmanifest
+
+RewriteEngine On
+
+# Canonical: https://www.flicina.de
+RewriteCond %{HTTP_HOST} ^flicina\.de$ [NC]
+RewriteRule ^(.*)$ https://www.flicina.de/$1 [R=301,L]
+
+# Alte WordPress-URLs (Yoast-Sitemap) auf die Abschnitte des Onepagers
+RewriteRule ^index\.php$ https://www.flicina.de/ [R=301,L]
+RewriteRule ^(leistungen-2|badsanierung)(/.*)?$ https://www.flicina.de/#leistungen [R=301,L,NE]
+RewriteRule ^kontakt/?$ https://www.flicina.de/#kontakt [R=301,L,NE]
+RewriteRule ^unser-team/?$ https://www.flicina.de/#ueber-uns [R=301,L,NE]
+RewriteRule ^(referenzen|projekt-[1-5]|verblendsteine-2017|gallery)(/.*)?$ https://www.flicina.de/#referenzen [R=301,L,NE]
+RewriteRule ^(category|tag|author)(/.*)?$ https://www.flicina.de/ [R=301,L]
+RewriteRule ^wp-content/ https://www.flicina.de/ [R=301,L]
+RewriteRule ^(wp-login\.php|xmlrpc\.php|feed)(/.*)?$ https://www.flicina.de/ [R=301,L]
+RewriteRule ^(datenschutzerklaerung|datenschutz-erklaerung)/?$ https://www.flicina.de/datenschutz/ [R=301,L]
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  <FilesMatch "\.(webp|jpg|png|svg|ico|woff2|mp4)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>

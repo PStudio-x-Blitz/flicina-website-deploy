@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://www.flicina.de/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <image:image><image:loc>https://www.flicina.de/img/bad-travertin-holzwaschtisch-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/bad-travertin-mosaiksaeule-1200.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/dachgeschoss-bad-doppelwaschtisch-1200.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/dachgeschoss-bad-walk-in-dusche-ganz-1200.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/bad-schwarze-armaturen-1200.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/verblendsteine-wandleuchte-1200.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/flur-travertin-doppelwaschtisch-1200.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/dusche-sitzbank-hell-720.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/bodengleiche-dusche-grossformat-720.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/terrasse-fertig-platten-720.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/walk-in-dusche-glas-720.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/verblendsteine-kachelofen-720.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/waschtisch-hell-zeitlos-720.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/waschtisch-holzoptik-hochkant-720.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/verblendsteine-wand-720.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/verblender-ziegeloptik-720.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/flur-travertin-schiebetuer-720.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/bad-travertin-waschtisch-720.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/bad-holzoptik-dusche-720.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/holzoptik-fliesen-dusche-720.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/waschtisch-aufsatzbecken-hell-600.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.flicina.de/img/fahrudin-licina-inhaber-900.webp</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.flicina.de/img/terrasse-kiesbett-bis-platte-poster-864.webp</video:thumbnail_loc>
+      <video:title>Terrasse vom Kiesbett bis zur fertigen Fläche</video:title>
+      <video:description>Fliesen-Licina verlegt eine Terrasse mit großformatigen Platten, vom Kiesbett bis zur fertigen Fläche.</video:description>
+      <video:content_loc>https://www.flicina.de/video/terrasse-kiesbett-bis-platte-hd.mp4</video:content_loc>
+      <video:duration>17</video:duration>
+    </video:video>
+  </url>
+</urlset>
