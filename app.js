@@ -2,6 +2,13 @@
 (function () {
   'use strict';
   var d = document, html = d.documentElement;
+  // Cloudflare Web Analytics im Kundenkonto (Besucher fürs Performance-Dashboard), nur auf flicina.de, nicht auf der Demo.
+  if (/(^|\.)flicina\.de$/.test(location.hostname)) {
+    var cfb = d.createElement('script');
+    cfb.defer = true; cfb.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    cfb.setAttribute('data-cf-beacon', '{"token":"b01efd89b5df47cebe39d302db5928be"}');
+    d.head.appendChild(cfb);
+  }
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   var $ = function (s, c) { return (c || d).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || d).querySelectorAll(s)); };
