@@ -17,7 +17,8 @@ RewriteRule ^(.*)$ https://www.flicina.de/$1 [R=301,L]
 
 # Alte WordPress-URLs (Yoast-Sitemap) auf die Abschnitte des Onepagers
 RewriteRule ^index\.php$ https://www.flicina.de/ [R=301,L]
-RewriteRule ^(leistungen-2|badsanierung)(/.*)?$ https://www.flicina.de/#leistungen [R=301,L,NE]
+RewriteRule ^badsanierung(/.*)?$ https://www.flicina.de/#badsanierung [R=301,L,NE]
+RewriteRule ^leistungen-2(/.*)?$ https://www.flicina.de/#leistungen [R=301,L,NE]
 RewriteRule ^kontakt/?$ https://www.flicina.de/#kontakt [R=301,L,NE]
 RewriteRule ^unser-team/?$ https://www.flicina.de/#ueber-uns [R=301,L,NE]
 RewriteRule ^(referenzen|projekt-[1-5]|verblendsteine-2017|gallery)(/.*)?$ https://www.flicina.de/#referenzen [R=301,L,NE]

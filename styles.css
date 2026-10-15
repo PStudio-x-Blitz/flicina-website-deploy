@@ -1130,3 +1130,14 @@ html.js .rv { transition-duration: .8s; }
 .owner__tag span { font-size: 14px; color: var(--mute); }
 .owner__tag b::before { content: ''; display: inline-block; width: 8px; height: 8px; margin: 0 8px 2px 0; background: var(--blue); border-radius: 2px; vertical-align: middle; }
 @media (min-width: 960px) { .split--about .owner { width: min(100%, 540px); justify-self: start; } }
+
+/* SEO-Ausbau 16.10.2026: Leistungen im Detail (Sprungziele) und Ortsteile im Einsatzgebiet */
+.ldx { grid-template-columns: minmax(0, 1fr); gap: 16px; margin-top: 40px; }
+.ldx .vb__it { padding: 22px 20px; background: #fff; border: 1px solid var(--line); border-radius: var(--r-lg); box-shadow: var(--shadow); }
+.ldx .vb__ic { background: var(--blue-l); box-shadow: none; }
+.ldx .vb__it .h3 { font-size: 19px; margin-bottom: 8px; }
+.ldx .vb__it p a { color: var(--blue); }
+.ldx__btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+@media (max-width: 599px) { .ldx .vb__it { flex-direction: column; gap: 14px; } .ldx__btns .btn { flex: 1 1 auto; } }
+@media (min-width: 960px) { .ldx { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; } .ldx .vb__it { padding: 30px 28px; } }
+.area3__txt { margin: 14px 0 0; max-width: 62ch; font-size: 16px; line-height: 1.6; color: var(--ink-2); }
