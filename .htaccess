@@ -27,6 +27,9 @@ RewriteRule ^wp-content/ https://www.flicina.de/ [R=301,L]
 RewriteRule ^(wp-login\.php|xmlrpc\.php|feed)(/.*)?$ https://www.flicina.de/ [R=301,L]
 RewriteRule ^(datenschutzerklaerung|datenschutz-erklaerung)/?$ https://www.flicina.de/datenschutz/ [R=301,L]
 
+# Die Seite braucht kein PHP. Jeder PHP-Aufruf (auch das alte WordPress) wird gesperrt (PHP-Lücken CVE-2026-109618/-109619, 23.10.2026).
+RewriteRule \.(php[0-9]?|phtml|phar)(/|$) - [F,L,NC]
+
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
